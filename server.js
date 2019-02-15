@@ -5,10 +5,12 @@ console.log("  |_ Importing dependencies")
 const express = require('express')
 const socketio = require('socket.io')
 const dateformat = require('dateformat')
+const Parser = require('rss-parser')
 
 // Dependencies initialisation
 console.log("  |_ Initialising dependencies")
 const app = express()
+const parser = new Parser()
 
 
 // Dependencies initialisation
@@ -21,14 +23,22 @@ const ioserver = socketio(appserver, {
 })
 
 // Server logic
-//                    ms     sec  min
 const query = {
   interval: 1000 * 60 * 60,
   url: 'https://store.steampowered.com/feeds/daily_deals.xml'
 }
 
 function run () {
-
+  (async () => {
+ 
+    let feed = await parser.parseURL(query.url);
+    console.log(feed.title);
+   
+    feed.items.forEach(item => {
+      console.log(item.title + ':' + item.link)
+    });
+   
+  })();
 }
 
 run()
