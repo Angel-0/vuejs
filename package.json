@@ -11,6 +11,10 @@
     "aljaxus",
     "Angel-0"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Angel-0/vuetify_steamAPI.git"
+  },
   "license": "ISC",
   "dependencies": {
     "dateformat": "^3.0.3",
