@@ -1,0 +1,22 @@
+{
+  "name": "steamdealsparser",
+  "version": "0.3.0",
+  "description": "A NodeJs app that simply parses Steam's daily deals and sends the info to you",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "aljaxus",
+  "authors": [
+    "aljaxus",
+    "Angel-0"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "rss-parser": "^3.6.2",
+    "socket.io": "^2.2.0"
+  }
+}
