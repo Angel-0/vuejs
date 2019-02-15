@@ -11,10 +11,8 @@
   <!-- -- -- START PRELOADER -- -- -->
   <style type="text/css" media="screen">
     body {
-      background: radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0, radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px, radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0, radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px, radial-gradient(hsl(0, 100%, 20%) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0, radial-gradient(hsl(0, 100%, 20%) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px, radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0, radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px, linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsl(0, 0%, 0%) 50%, hsla(0,100%,20%,0)70%)0 0,linear-gradient(-45deg,hsla(0,100%,20%,0)49%,hsl(0,0%,0%) 50%,hsla(0, 100%, 20%, 0) 70%) 0 0;
-      background-color: #300;
-      background-size: 100px 100px;
-      background-repeat: repeat;
+      background: url( '/img/colored_body_top2.png' ) center top no-repeat #1b2838;
+      background-color: #1b2838;
       transition: opacity.6s;
       overflow: hidden;
     }
@@ -47,31 +45,12 @@
 
 <!-- START CLIENT LOGIC -->
 <script src="/socket.io/socket.io.js"></script>
-<script src="./js/1_functions.js"></script>
-<script src="./js/2_dateformat.js"></script>
-<script src="./js/main.js"></script>
 <!-- END CLIENT LOGIC -->
 
 <!-- START CLIENT STILING -->
 <style>
-#container {
-  display: grid;
-  height: calc( 100vh - 16px );
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 128px auto 128px 128px 128px 64px;
 
-  background-color: rgba(0,0,0,0.2);
-  box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.2), 0px 0px 10px 1px rgba(0,0,0,0.14), 0px 0px 14px 2px rgba(0,0,0,0.12);
-}
 </style>
-<link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="./css/playfield.css">
-<link rel="stylesheet" type="text/css" media="screen" href="./css/datafield.css">
-<link rel="stylesheet" type="text/css" media="screen" href="./css/biddingfield.css">
-<link rel="stylesheet" type="text/css" media="screen" href="./css/chatfield.css">
-<link rel="stylesheet" type="text/css" media="screen" href="./css/creditsfield.css">
-<link rel="stylesheet" type="text/css" media="screen" href="./css/namefield.css">
-<link rel="stylesheet" type="text/css" media="screen" href="./css/leaderboardfield.css">
 <!-- END CLIENT STILING -->
 
 </body>
