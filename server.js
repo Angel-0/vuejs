@@ -24,6 +24,7 @@ const ioserver = socketio(appserver, {
 
 // Server logic
 const query = {
+  //        ms     sec  min
   interval: 1000 * 60 * 60,
   url: 'https://store.steampowered.com/feeds/daily_deals.xml'
 }
