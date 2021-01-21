@@ -20,6 +20,6 @@
     "dateformat": "^3.0.3",
     "express": "^4.16.4",
     "rss-parser": "^3.6.2",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.4.0"
   }
 }
